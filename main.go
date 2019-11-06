@@ -73,11 +73,6 @@ func (r *Router) parseRegExp(regexp string, str string) Keys {
 		log.Println("NIL:", re, st)
 		return nil
 	}
-	log.Println("-----------------")
-	log.Println("RE:", regexp, str)
-	log.Println(re, st)
-	log.Println(len(re), len(st))
-	log.Println("-----------------")
 	var p Keys
 	p = make(Keys)
 	for i := range re {
